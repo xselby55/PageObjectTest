@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Automation(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.Test_Cases.loginTest">
+        <methods>
+          <include name="exitBrowser"/>
+          <include name="loginiTest"/>
+          <include name="crmLogoTest"/>
+          <include name="setUp"/>
+          <include name="validatePageTitleTest"/>
+        </methods>
+      </class> <!-- com.crm.Test_Cases.loginTest -->
+      <class name="com.crm.Test_Cases.customePageTest">
+        <methods>
+          <include name="exitBrowser"/>
+          <include name="setUp"/>
+          <include name="createNewCustomer" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.crm.Test_Cases.customePageTest -->
+      <class name="com.crm.Test_Cases.homePageTest">
+        <methods>
+          <include name="vrfyLogoTest"/>
+          <include name="exitBrowser"/>
+          <include name="vrfyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="vrfyNewCustomerTest"/>
+        </methods>
+      </class> <!-- com.crm.Test_Cases.homePageTest -->
+    </classes>
+  </test> <!-- Automation(failed) -->
+</suite> <!-- Failed suite [Automation Testing] -->

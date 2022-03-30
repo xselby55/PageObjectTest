@@ -16,7 +16,7 @@ import qa.base.Base;
 
 public class CustomerPage extends Base {
 
-	@FindBy(xpath = "//input[@name='name']")
+	@FindBy(xpath = "/html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]/input")
 	WebElement nam;
 
 	public CustomerPage() {

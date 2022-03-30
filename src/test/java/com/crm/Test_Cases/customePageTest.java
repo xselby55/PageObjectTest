@@ -64,7 +64,6 @@ public class customePageTest extends Base {
 		homepage.clickNewCustomerLink();
 		//driver.navigate().to("https://demo.guru99.com/V1/html/addcustomerpage.php");
 		customerpage.fillTheForm(name, gender, date, address, city, state, pin, tel, email);
-		testutile.setCellData("Sheet1", 1, 10, "Pass");
 		Thread.sleep(3000);
 	}
 
